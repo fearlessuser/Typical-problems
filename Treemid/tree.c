@@ -12,8 +12,8 @@ typedef struct TreeNode
 void Preorder(Node root)
 {
     if(root == NULL) return;
-    printf("%c",root->e1);
     Preorder(root->left);
+    printf("%c",root->e1);
     Preorder(root->right);
 }
 int main()
